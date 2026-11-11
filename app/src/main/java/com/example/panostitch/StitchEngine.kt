@@ -51,7 +51,7 @@ object StitchEngine {
             val stitcher = Stitcher.create(o.mode.cv).apply {
                 setRegistrationResol(o.matchMegapix)
                 setSeamEstimationResol(0.1)
-                setCompositingResol(Stitcher.ORIG_RESOL)
+                setCompositingResol(-1.0)
                 setPanoConfidenceThresh(o.confidence)
                 setWaveCorrection(o.waveCorrect)
             }
