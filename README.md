@@ -1,11 +1,12 @@
+[README.md](https://github.com/user-attachments/files/34733247/README.md)
 # PanoStitch
 
 Open-source Android panorama stitcher (Kotlin · Jetpack Compose · OpenCV 4.10).
 
 ## Features
 - Multi-photo import via the system Photo Picker (up to 40), EXIF-aware
-- Panorama and Flat/Scans modes, with automatic image ordering
-- Tunable matching detail, confidence, input/output size, wave correction
+- Own stitching engine (SIFT + RANSAC homography + feathered blending); Panorama and Flat/Scans modes
+- Tunable matching detail/strictness, input/output size, exposure balancing
 - Auto-crop of black borders, JPEG (quality slider) or lossless PNG
 - Pinch-to-zoom viewer, save to Pictures/PanoStitch, share sheet
 - No permissions required (minSdk 29)
@@ -16,7 +17,7 @@ generate the wrapper. Run on a device (arm64 recommended).
 
 ## Tips
 - Overlap shots by ~30%, keep exposure locked, rotate around your position.
-- "Not enough overlap" → lower Match confidence to ~0.6.
+- Photos must be picked in sweep order. "Photos N and N+1 don't match" → raise Match strictness toward 0.85 or remove blurry shots.
 - Out-of-memory → reduce Input size or photo count.
 
 ## Ideas to extend
