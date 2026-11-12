@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- three overlapping photo frames -->
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.45"
+        android:pathData="M32,42h16a4,4 0 0 1 4,4v16a4,4 0 0 1 -4,4h-16a4,4 0 0 1 -4,-4v-16a4,4 0 0 1 4,-4z" />
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.6"
+        android:pathData="M44,42h16a4,4 0 0 1 4,4v16a4,4 0 0 1 -4,4h-16a4,4 0 0 1 -4,-4v-16a4,4 0 0 1 4,-4z" />
+    <path android:fillColor="#FFFFFF" android:fillAlpha="0.95"
+        android:pathData="M56,42h16a4,4 0 0 1 4,4v16a4,4 0 0 1 -4,4h-16a4,4 0 0 1 -4,-4v-16a4,4 0 0 1 4,-4z" />
+    <!-- mountain ridge running across the stitched frames -->
+    <path android:fillColor="#0D47A1" android:fillAlpha="0.85"
+        android:pathData="M29,66L38,54L44,60L54,48L62,58L68,52L75,66z" />
+    <!-- sun -->
+    <path android:fillColor="#FFD54F"
+        android:pathData="M36,47.5a2.5,2.5 0 1 0 0.01,0z" />
+</vector>
